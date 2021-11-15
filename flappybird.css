@@ -1,0 +1,25 @@
+a:link {
+  text-decoration: none;
+  background-color: black;
+  color: white;
+  border: 2px;
+}
+
+a:active {
+  text-decoration: none;
+  color: black;
+}
+
+a:visited { 
+  text-decoration: none; 
+}
+
+a:hover { 
+  text-decoration: none; 
+}
+
+body {
+  padding: 100px;
+  margin-left: 250px;
+  margin-right: 100px;
+}

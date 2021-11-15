@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Guess the Color</title>
+    
+    <!-- import the webpage's stylesheet -->
+    <link rel="stylesheet" href="/game.css">
+    
+    <!-- import the webpage's javascript file -->
+    <script src="game.js" defer></script>
+  </head>  
+  <body>
+    <div class="header">
+    <div class="lives">
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-heart"></i>
+      <i class="fa fa-heart"></i>
+    </div>
+    <button id="HomePageBtn"><a href="index.html";>Home</a></button>
+    </div>
+    <p class="timer" id="timer">Time: </p>
+    
+    <div class="game-container">
+      <h1 class="title">Guess the Color!</h1>
+    <div class="game">
+      <strong><p class="rgb_value" id="rgb_value">Click start to run the game!</p></strong>
+
+      <div class="button-container">
+        <button class="buttons" id="button1">Button 1</button>
+        <button class="buttons" id="button2">Button 2</button>
+        <button class="buttons" id="button3">Button 3</button>
+        <button class="buttons" id="button4">Button 4</button>
+        <button class="buttons" id="button5">Button 5</button>
+        <button class="buttons" id="button6">Button 6</button>
+      </div>
+
+      <!-- game results -->
+      <p id = "score">Score:</p>
+      <p class="result" id = "result">Placeholder</p>
+
+      <!-- reset game -->
+      <button class="reset" id="reset">Reset Game</button>
+    </div>
+    </div>
+
+
+    <div class="modal" id="modal">
+      <i class="fa fa-times-circle" id="close"></i>
+      <h2 id="end-message">Time's Up!</h2>
+      <div class="ending">
+        <p class="ending-score" id="ending-score">Your score: </p>
+        <p class="highscore" id="highscore">High Score: </p>
+      </div>
+    </div>
+    <div class="overlay" id="overlay"></div>
+
+    <div class="start-modal" id="start-modal">
+      <div class="start">
+        <h2>How to Play</h2>
+        <p class="instructions" id="instructions">
+          Click the color that matches the rgb value.
+          <br>
+          If you guess the correct color, you get 10 points.
+          <br>
+          If you guess the wrong color, you lose 2 points.
+          <br>
+          <br>
+          Time limit: 30s
+          <br>
+          Click reset to start over.
+        </p>
+        <button class="start-button" id="start-button">START GAME</button>
+      </div>
+    </div>
+    <div class="start-overlay" id="start-overlay"></div>
+    
+  </body>
+</html>
